@@ -1,0 +1,9 @@
+.work {
+    margin: 0;
+    padding: 0;
+    background-color: #00afaa;
+    display: flex;
+    list-style-type:none;
+    flex-direction: row;
+    padding-bottom:40px;
+}

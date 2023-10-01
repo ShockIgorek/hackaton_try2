@@ -1,0 +1,8 @@
+.aboutUs {
+    font-size: 12px;
+    margin: 80px auto;
+    width: 800px;
+    height: 400px;
+    background-color: antiquewhite;
+    z-index: 1;
+}

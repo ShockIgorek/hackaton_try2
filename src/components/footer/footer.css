@@ -1,0 +1,55 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    min-height: 300px;
+    margin: 0 auto;
+    background-color: rgb(12, 12, 12);
+    padding-bottom: 40px;
+}
+.down__text {
+    color: rgb(255, 255, 255);
+}
+.down__link {
+    position: relative;
+    margin:0;
+    text-decoration: none;
+    color:#00afaa;
+    transition: .4s;
+    
+}
+
+.down__link:hover {
+    opacity: 1;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+
+}
+.down__link:after {
+    opacity: 1;
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: #00afaa; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.3s; /* Время эффекта */
+}
+.down__link:hover:after {
+    opacity: 1;
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: #cb2b99; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.3s;  /* Время эффекта */
+}

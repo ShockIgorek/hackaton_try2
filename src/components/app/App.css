@@ -1,0 +1,14 @@
+.App {
+  scroll-behavior: smooth;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1920px;
+  /* background-image: url(../../image/patterm90.png); */
+  background-size: contain;
+  background-position: center;
+  background-color: #fff;
+}
+@media screen and (max-width: 1440px) {
+  
+}
+
