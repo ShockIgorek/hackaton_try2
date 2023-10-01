@@ -415,33 +415,7 @@ const Job = () => {
         </div>
 )}
 
-const modal = document.querySelectorAll(".button__response")
-function closeByOverlay (evt) {
-  if (evt.target.classList.contains('popup_opened')) {
-    closePopup(evt.target)
-  }
-};
-//закртие попапа кликом на esc
-function closeByEscape(evt) {
-  if (evt.key === 'Escape') {
-    const openedPopup = document.querySelector('.popup_opened');
-    closePopup(openedPopup)
-  }
-}
-const openPopup = (selector) => {
-  selector.classList.add('popup_opened')
-  document.addEventListener('keydown', closeByEscape);
-  document.addEventListener('mousedown', closeByOverlay);
-}
-const closePopup = (popup) => {
-  popup.classList.remove('popup_opened');
-  document.removeEventListener('keydown', closeByEscape)
-  document.removeEventListener('mousedown', closeByOverlay);
-}
 
-modal.forEach(popup => {
-  popup.addEventListener('click', (evt) => closePopup(evt.target.closest('.popup')))
-});
 
 
 

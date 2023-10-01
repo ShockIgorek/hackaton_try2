@@ -19,8 +19,9 @@
     "scroll-horizontal": "^1.0.8",
     "styled-components": "^6.0.8",
     "web-vitals": "^2.1.4"
-  },
+  },"homepage": ".",
   "scripts": {
+
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

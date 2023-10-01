@@ -1,9 +1,22 @@
 .work {
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
     background-color: #00afaa;
     display: flex;
+    justify-content: space-around;
     list-style-type:none;
     flex-direction: row;
     padding-bottom:40px;
+}
+.work__list {
+    padding: 20px;
+    text-align: left;
+    height: 100px;
+    width: 300px;
+}
+
+li::first-line {
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
 }
